@@ -129,6 +129,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     print("Looks like no local_settings.py. You must be on production")
